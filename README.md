@@ -10,7 +10,7 @@ NSArray<NSNumber *> *numbers = @[ @1, @2, @3, @4 ];
 
 NSNumber *sum = [numbers valueForKeyPath:@"@sum.self"];
 ```
-# Define ENUMS
+## Define enums
 
 ```Objective-C
 typedef enum ShapeType : NSUInteger {
