@@ -10,6 +10,15 @@ NSArray<NSNumber *> *numbers = @[ @1, @2, @3, @4 ];
 
 NSNumber *sum = [numbers valueForKeyPath:@"@sum.self"];
 ```
+# Define ENUMS
+
+```Objective-C
+typedef enum ShapeType : NSUInteger {
+    kCircle,
+    kRectangle,
+    kOblateSpheroid
+} ShapeType;
+```
 
 ## Objective-C Blocks
 
