@@ -10,3 +10,7 @@ NSArray<NSNumber *> *numbers = @[ @1, @2, @3, @4 ];
 
 NSNumber *sum = [numbers valueForKeyPath:@"@sum.self"];
 ```
+
+## Objective-C Blocks
+
+[http://fuckingblocksyntax.com/](http://fuckingblocksyntax.com/)
