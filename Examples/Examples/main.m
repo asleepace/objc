@@ -6,13 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "Snippets.h"
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
+    
+    SuperReducedString *reducer = [SuperReducedString new];
+    
+    NSString *input = @"aabaabd";
+    NSString *output = [reducer superReducedString:input];
       
-    NSLog(@"Hello, it is: %@", timeConversion(@"05:15:25PM"));
+    NSLog(@"input: %@ output: %@", input, output);
   }
   return 0;
 }
