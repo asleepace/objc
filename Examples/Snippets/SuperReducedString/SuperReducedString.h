@@ -9,6 +9,6 @@
 
 @interface SuperReducedString : NSObject
 
-- (NSString *) superReducedString:(NSString *)s;
+- (NSString *)superReducedString:(NSString *)s;
 
 @end
