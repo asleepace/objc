@@ -68,9 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				129969F3269A2DE7008C2C28 /* Examples */,
-				12996A1B269A4A6C008C2C28 /* MaxSumSegments */,
-				12996A12269A461A008C2C28 /* TimeConversion */,
-				12996A07269A2EEA008C2C28 /* SuperReducedStrings */,
 				12996A00269A2E5C008C2C28 /* Tests */,
 				129969F2269A2DE7008C2C28 /* Products */,
 			);
@@ -89,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				129969F4269A2DE7008C2C28 /* main.m */,
+				12996A12269A461A008C2C28 /* TimeConversion */,
+				12996A1B269A4A6C008C2C28 /* MaxSumSegments */,
+				12996A07269A2EEA008C2C28 /* SuperReducedStrings */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
