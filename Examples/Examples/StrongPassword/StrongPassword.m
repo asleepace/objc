@@ -12,26 +12,38 @@
 @implementation StrongPassword
 
 - (NSNumber *) minimumNumber:(NSNumber *)n password:(NSString *)password {
-  
+    
   BOOL hasDigit = false, hasLowercase = false, hasUppercase = false, hasSpecialChar = false;
   
   for (NSUInteger i=0; i<password.length; i++) {
     const char c = [password characterAtIndex:i];
-    if (hasSpecialChar == false) hasSpecialChar = isspecial(c);
+    if (hasSpecialChar == false) {
+      if (c == '!' || c == '@' || c == '#' || c == '$' || c == '%' || c == '^' ||
+          c == '&' || c == '*' || c == '(' || c ==')' || c == '-' || c =='+') {
+        hasSpecialChar = true;
+      }
+    }
     if (hasLowercase == false) hasLowercase = islower(c);
     if (hasUppercase == false) hasUppercase = isupper(c);
     if (hasDigit == false) hasDigit = isdigit(c);
   }
   
-  NSUInteger needed = 0;
+  NSLog(@"[StrongPassword] digit: %i lowercase: %i uppercase: %i special: %i", hasDigit, hasLowercase, hasUppercase, hasSpecialChar);
+  
+  NSInteger needed = 0, missing = 6 - n.intValue;
   if (!hasSpecialChar) needed++;
   if (!hasUppercase) needed++;
   if (!hasLowercase) needed++;
   if (!hasDigit) needed++;
   
-  needed += 6 - n.integerValue + needed;
   
-  return @(needed);
+  NSLog(@"[StrongPassword] needed %ld missing: %i", needed, 6 - n.intValue);
+      
+  NSNumber *output = needed < missing ? @(missing) : @(needed);
+  
+  NSLog(@"[StrongPassword] needed %ld missing: %i output: %i", needed, 6 - n.intValue, output.intValue);
+  
+  return output;
 }
 
 @end

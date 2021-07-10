@@ -22,6 +22,7 @@
 		12996A27269A520B008C2C28 /* TestCamelCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A25269A520B008C2C28 /* TestCamelCase.m */; };
 		12996A2B269A547E008C2C28 /* StrongPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A2A269A547E008C2C28 /* StrongPassword.m */; };
 		12996A2C269A547E008C2C28 /* StrongPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A2A269A547E008C2C28 /* StrongPassword.m */; };
+		12996A2E269A5ADB008C2C28 /* TestStrongPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A2D269A5ADB008C2C28 /* TestStrongPassword.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,7 @@
 		12996A25269A520B008C2C28 /* TestCamelCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCamelCase.m; sourceTree = "<group>"; };
 		12996A29269A547E008C2C28 /* StrongPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongPassword.h; sourceTree = "<group>"; };
 		12996A2A269A547E008C2C28 /* StrongPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrongPassword.m; sourceTree = "<group>"; };
+		12996A2D269A5ADB008C2C28 /* TestStrongPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStrongPassword.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				12996A25269A520B008C2C28 /* TestCamelCase.m */,
+				12996A2D269A5ADB008C2C28 /* TestStrongPassword.m */,
 				12996A17269A472A008C2C28 /* TestTimeConversion.m */,
 				12996A0E269A309C008C2C28 /* TestSuperReducedString.m */,
 				12996A03269A2E5C008C2C28 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12996A2E269A5ADB008C2C28 /* TestStrongPassword.m in Sources */,
 				12996A19269A472A008C2C28 /* TestTimeConversion.m in Sources */,
 				12996A0B269A2F15008C2C28 /* SuperReducedStrings.m in Sources */,
 				12996A10269A309C008C2C28 /* TestSuperReducedString.m in Sources */,
