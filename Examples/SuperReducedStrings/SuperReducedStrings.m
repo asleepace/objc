@@ -1,20 +1,20 @@
 //
-//  SuperReducedString.m
+//  SuperReducedStrings.m
 //  Examples
 //
 //  Created by padlet on 7/10/21.
 //
 
-#import "SuperReducedString.h"
+#import "SuperReducedStrings.h"
 
-@implementation SuperReducedString
+@implementation SuperReducedStrings
 
 - (NSString *)superReducedString:(NSString *)string {
   
   NSLog(@"string: %@", string);
   
   if (string == nil) return @"";
-    
+  
   BOOL didReduceString = NO;
   
   for (NSUInteger i=1; i<string.length-1; i++) {
