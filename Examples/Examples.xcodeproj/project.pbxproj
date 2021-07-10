@@ -17,6 +17,9 @@
 		12996A19269A472A008C2C28 /* TestTimeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A17269A472A008C2C28 /* TestTimeConversion.m */; };
 		12996A1E269A4A8B008C2C28 /* MaxSumSegments.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A1D269A4A8B008C2C28 /* MaxSumSegments.m */; };
 		12996A1F269A4A8B008C2C28 /* MaxSumSegments.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A1D269A4A8B008C2C28 /* MaxSumSegments.m */; };
+		12996A23269A50EE008C2C28 /* CamelCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A22269A50EE008C2C28 /* CamelCase.m */; };
+		12996A24269A50EE008C2C28 /* CamelCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A22269A50EE008C2C28 /* CamelCase.m */; };
+		12996A27269A520B008C2C28 /* TestCamelCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A25269A520B008C2C28 /* TestCamelCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +47,9 @@
 		12996A17269A472A008C2C28 /* TestTimeConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTimeConversion.m; sourceTree = "<group>"; };
 		12996A1C269A4A8B008C2C28 /* MaxSumSegments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaxSumSegments.h; sourceTree = "<group>"; };
 		12996A1D269A4A8B008C2C28 /* MaxSumSegments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaxSumSegments.m; sourceTree = "<group>"; };
+		12996A21269A50EE008C2C28 /* CamelCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamelCase.h; sourceTree = "<group>"; };
+		12996A22269A50EE008C2C28 /* CamelCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamelCase.m; sourceTree = "<group>"; };
+		12996A25269A520B008C2C28 /* TestCamelCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCamelCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				129969F4269A2DE7008C2C28 /* main.m */,
+				12996A20269A50D9008C2C28 /* CamelCase */,
 				12996A12269A461A008C2C28 /* TimeConversion */,
 				12996A1B269A4A6C008C2C28 /* MaxSumSegments */,
 				12996A07269A2EEA008C2C28 /* SuperReducedStrings */,
@@ -96,6 +103,7 @@
 		12996A00269A2E5C008C2C28 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				12996A25269A520B008C2C28 /* TestCamelCase.m */,
 				12996A17269A472A008C2C28 /* TestTimeConversion.m */,
 				12996A0E269A309C008C2C28 /* TestSuperReducedString.m */,
 				12996A03269A2E5C008C2C28 /* Info.plist */,
@@ -128,6 +136,15 @@
 				12996A1D269A4A8B008C2C28 /* MaxSumSegments.m */,
 			);
 			path = MaxSumSegments;
+			sourceTree = "<group>";
+		};
+		12996A20269A50D9008C2C28 /* CamelCase */ = {
+			isa = PBXGroup;
+			children = (
+				12996A21269A50EE008C2C28 /* CamelCase.h */,
+				12996A22269A50EE008C2C28 /* CamelCase.m */,
+			);
+			path = CamelCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +239,7 @@
 				12996A15269A4657008C2C28 /* TimeConversion.m in Sources */,
 				129969F5269A2DE7008C2C28 /* main.m in Sources */,
 				12996A0A269A2F15008C2C28 /* SuperReducedStrings.m in Sources */,
+				12996A23269A50EE008C2C28 /* CamelCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +251,8 @@
 				12996A0B269A2F15008C2C28 /* SuperReducedStrings.m in Sources */,
 				12996A10269A309C008C2C28 /* TestSuperReducedString.m in Sources */,
 				12996A16269A4657008C2C28 /* TimeConversion.m in Sources */,
+				12996A27269A520B008C2C28 /* TestCamelCase.m in Sources */,
+				12996A24269A50EE008C2C28 /* CamelCase.m in Sources */,
 				12996A1F269A4A8B008C2C28 /* MaxSumSegments.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
