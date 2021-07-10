@@ -24,10 +24,22 @@
   reducer = nil;
 }
 
-- (void)testSuperReducedString {
-  
-  XCTAssert([[reducer superReducedString:@"aaabccddd"]  isEqualToString:@"abd"]);
-  
+- (void)testCase1 {
+  NSString *input = @"aa";
+  NSString *output = [reducer superReducedString:input];
+  XCTAssert([output isEqualToString:@""]);
+}
+
+- (void)testCase2 {
+  NSString *input = @"baab";
+  NSString *output = [reducer superReducedString:input];
+  XCTAssert([output isEqualToString:@""]);
+}
+
+- (void)testCase3 {
+  NSString *input = @"aaabccddd";
+  NSString *output = [reducer superReducedString:input];
+  XCTAssert([output  isEqualToString:@"abd"]);
 }
 
 @end

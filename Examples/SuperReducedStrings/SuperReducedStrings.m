@@ -2,7 +2,9 @@
 //  SuperReducedStrings.m
 //  Examples
 //
-//  Created by padlet on 7/10/21.
+//  Created by Colin on 7/10/21.
+//
+//  Original problem: https://www.hackerrank.com/challenges/reduced-string/problem
 //
 
 #import "SuperReducedStrings.h"
@@ -11,26 +13,23 @@
 
 - (NSString *)superReducedString:(NSString *)string {
   
-  NSLog(@"string: %@", string);
-  
+  // handle base case and return empty string
   if (string == nil) return @"";
   
-  BOOL didReduceString = NO;
-  
-  for (NSUInteger i=1; i<string.length-1; i++) {
-    const char c1 = [string characterAtIndex:i];
-    const char c2 = [string characterAtIndex:i-1];
-    if (c1 == c2) {
-      NSString *prevStr = [string substringToIndex:i-1];
-      NSString *nextStr = [string substringFromIndex:i+1];
-      string = [NSString stringWithFormat:@"%@%@", prevStr, nextStr];
-      NSLog(@"reduced: %@", string);
-      didReduceString = YES;
+  // iterate string for pairs and reduce pair and then reduce recursively
+  for (NSUInteger i=1, j=0, n=2; i<string.length; i++, j++, n++) {
+    const char c1 = [string characterAtIndex:j];
+    const char c2 = [string characterAtIndex:i];
+    if (c1 == c2 && n <= string.length) {
+      NSString *prev = [string substringToIndex:j];
+      NSString *next = [string substringFromIndex:n];
+      string = [prev stringByAppendingString:next];
+      string = [self superReducedString:string];
+      break;
     }
   }
   
-  if (didReduceString) string = [self superReducedString:string];
-  
+  // return reduced string
   return string;
 }
 
