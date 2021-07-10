@@ -6,17 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Snippets.h"
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
-    
-    SuperReducedString *reducer = [SuperReducedString new];
-    
-    NSString *input = @"aabaabd";
-    NSString *output = [reducer superReducedString:input];
-      
-    NSLog(@"input: %@ output: %@", input, output);
+      // insert code here...
+      NSLog(@"Hello, World!");
   }
   return 0;
 }

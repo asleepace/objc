@@ -9,6 +9,6 @@
 
 @interface TimeConversion : NSObject
 
-NSString * timeConversion(NSString *s);
+- (NSString *)timeConversion:(NSString *)s;
 
 @end

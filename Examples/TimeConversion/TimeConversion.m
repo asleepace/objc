@@ -9,7 +9,7 @@
 
 @implementation TimeConversion
 
-NSString * timeConversion(NSString *s)
+- (NSString *)timeConversion:(NSString *)s
 {
   NSDateFormatter *format = [NSDateFormatter new];
   [format setDateFormat:@"hh:mm:ssa"];

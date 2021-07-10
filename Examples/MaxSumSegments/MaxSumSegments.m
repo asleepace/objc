@@ -1,8 +1,8 @@
 //
-//  main.m
-//  maxSumSegments
+//  MaxSumSegments.m
+//  Examples
 //
-//  Created by Colin Teahan on 7/8/21.
+//  Created by Colin on 7/10/21.
 //
 //  Original Problem: https://app.codesignal.com/challenge/G46DFL7MxHtqDe9Mb
 //
@@ -11,7 +11,7 @@
 
 @implementation MaxSumSegments
 
-NSMutableArray<NSNumber *> * maxSumSegments(NSMutableArray<NSNumber *> * input) {
+- (NSMutableArray<NSNumber*> *)maxSumSegments:(NSMutableArray<NSNumber *> *)input {
   
   // create results array to hold valueds
   NSMutableArray<NSNumber *> * results = [NSMutableArray arrayWithCapacity:input.count];
@@ -47,21 +47,5 @@ NSMutableArray<NSNumber *> * maxSumSegments(NSMutableArray<NSNumber *> * input) 
   
   return results;
 }
-
-
-#pragma mark - Testing
-
-
-//int main(int argc, const char * argv[]) {
-//  @autoreleasepool {
-//    NSMutableArray<NSNumber *> *test = [NSMutableArray arrayWithArray:@[@-1, @2, @1, @3, @-2]];
-//    NSMutableArray *output = maxSumSegments(test);
-//    NSLog(@"%@",[output description]);
-//  }
-//  return 0;
-//}
-//
-//
-//@end
 
 @end
