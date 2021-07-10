@@ -4,17 +4,12 @@
 //
 //  Created by Colin Teahan on 7/8/21.
 //
-//  You are given an array of integers inputArray. Consider all its contiguous subarrays of length k and pick the one with the maximum sum. If
-//  there are several contiguous subarrays with the maximum sum, pick the leftmost one. Put the 0-based index of the first (leftmost) element
-//  of that subarray into result[k - 1]. Do this for all k from 1 up to the length of the inputArray. Return result.
-//
-//  Original Problem:
-//  https://app.codesignal.com/challenge/G46DFL7MxHtqDe9Mb
+//  Original Problem: https://app.codesignal.com/challenge/G46DFL7MxHtqDe9Mb
 //
 
+#import "MaxSumSegments.h"
 
-#import <Foundation/Foundation.h>
-
+@implementation MaxSumSegments
 
 NSMutableArray<NSNumber *> * maxSumSegments(NSMutableArray<NSNumber *> * input) {
   
@@ -57,11 +52,16 @@ NSMutableArray<NSNumber *> * maxSumSegments(NSMutableArray<NSNumber *> * input) 
 #pragma mark - Testing
 
 
-int main(int argc, const char * argv[]) {
-  @autoreleasepool {
-    NSMutableArray<NSNumber *> *test = [NSMutableArray arrayWithArray:@[@-1, @2, @1, @3, @-2]];
-    NSMutableArray *output = maxSumSegments(test);
-    NSLog(@"%@",[output description]);
-  }
-  return 0;
-}
+//int main(int argc, const char * argv[]) {
+//  @autoreleasepool {
+//    NSMutableArray<NSNumber *> *test = [NSMutableArray arrayWithArray:@[@-1, @2, @1, @3, @-2]];
+//    NSMutableArray *output = maxSumSegments(test);
+//    NSLog(@"%@",[output description]);
+//  }
+//  return 0;
+//}
+//
+//
+//@end
+
+@end
