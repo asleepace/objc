@@ -36,14 +36,7 @@
   if (!hasLowercase) needed++;
   if (!hasDigit) needed++;
   
-  
-  NSLog(@"[StrongPassword] needed %ld missing: %i", needed, 6 - n.intValue);
-      
-  NSNumber *output = needed < missing ? @(missing) : @(needed);
-  
-  NSLog(@"[StrongPassword] needed %ld missing: %i output: %i", needed, 6 - n.intValue, output.intValue);
-  
-  return output;
+  return @(MAX(missing, needed));
 }
 
 @end
