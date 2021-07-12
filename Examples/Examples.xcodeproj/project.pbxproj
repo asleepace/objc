@@ -23,6 +23,9 @@
 		12996A2B269A547E008C2C28 /* StrongPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A2A269A547E008C2C28 /* StrongPassword.m */; };
 		12996A2C269A547E008C2C28 /* StrongPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A2A269A547E008C2C28 /* StrongPassword.m */; };
 		12996A2E269A5ADB008C2C28 /* TestStrongPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A2D269A5ADB008C2C28 /* TestStrongPassword.m */; };
+		12996A31269BC68D008C2C28 /* TwoCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A30269BC68D008C2C28 /* TwoCharacters.m */; };
+		12996A32269BC68D008C2C28 /* TwoCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A30269BC68D008C2C28 /* TwoCharacters.m */; };
+		12996A35269BC6C1008C2C28 /* TestTwoCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 12996A34269BC6C1008C2C28 /* TestTwoCharacters.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +59,9 @@
 		12996A29269A547E008C2C28 /* StrongPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongPassword.h; sourceTree = "<group>"; };
 		12996A2A269A547E008C2C28 /* StrongPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrongPassword.m; sourceTree = "<group>"; };
 		12996A2D269A5ADB008C2C28 /* TestStrongPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStrongPassword.m; sourceTree = "<group>"; };
+		12996A2F269BC68D008C2C28 /* TwoCharacters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoCharacters.h; sourceTree = "<group>"; };
+		12996A30269BC68D008C2C28 /* TwoCharacters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoCharacters.m; sourceTree = "<group>"; };
+		12996A34269BC6C1008C2C28 /* TestTwoCharacters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTwoCharacters.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 				12996A12269A461A008C2C28 /* TimeConversion */,
 				12996A1B269A4A6C008C2C28 /* MaxSumSegments */,
 				12996A07269A2EEA008C2C28 /* SuperReducedStrings */,
+				12996A33269BC696008C2C28 /* TwoCharacters */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				12996A25269A520B008C2C28 /* TestCamelCase.m */,
+				12996A34269BC6C1008C2C28 /* TestTwoCharacters.m */,
 				12996A2D269A5ADB008C2C28 /* TestStrongPassword.m */,
 				12996A17269A472A008C2C28 /* TestTimeConversion.m */,
 				12996A0E269A309C008C2C28 /* TestSuperReducedString.m */,
@@ -162,6 +170,15 @@
 				12996A2A269A547E008C2C28 /* StrongPassword.m */,
 			);
 			path = StrongPassword;
+			sourceTree = "<group>";
+		};
+		12996A33269BC696008C2C28 /* TwoCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				12996A2F269BC68D008C2C28 /* TwoCharacters.h */,
+				12996A30269BC68D008C2C28 /* TwoCharacters.m */,
+			);
+			path = TwoCharacters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +274,7 @@
 				129969F5269A2DE7008C2C28 /* main.m in Sources */,
 				12996A0A269A2F15008C2C28 /* SuperReducedStrings.m in Sources */,
 				12996A23269A50EE008C2C28 /* CamelCase.m in Sources */,
+				12996A31269BC68D008C2C28 /* TwoCharacters.m in Sources */,
 				12996A2B269A547E008C2C28 /* StrongPassword.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +287,13 @@
 				12996A19269A472A008C2C28 /* TestTimeConversion.m in Sources */,
 				12996A0B269A2F15008C2C28 /* SuperReducedStrings.m in Sources */,
 				12996A10269A309C008C2C28 /* TestSuperReducedString.m in Sources */,
+				12996A32269BC68D008C2C28 /* TwoCharacters.m in Sources */,
 				12996A2C269A547E008C2C28 /* StrongPassword.m in Sources */,
 				12996A16269A4657008C2C28 /* TimeConversion.m in Sources */,
 				12996A27269A520B008C2C28 /* TestCamelCase.m in Sources */,
 				12996A24269A50EE008C2C28 /* CamelCase.m in Sources */,
 				12996A1F269A4A8B008C2C28 /* MaxSumSegments.m in Sources */,
+				12996A35269BC6C1008C2C28 /* TestTwoCharacters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
