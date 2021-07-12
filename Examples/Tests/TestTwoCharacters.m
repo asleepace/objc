@@ -6,24 +6,27 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TwoCharacters.h"
 
 @interface TestTwoCharacters : XCTestCase
+{
+  TwoCharacters *two;
+}
 
 @end
 
 @implementation TestTwoCharacters
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+  two = [TwoCharacters new];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+  two = nil;
 }
 
 - (void)test1 {
-
-  
+  [two alternate:@"beabeefeab"];
 }
 
 

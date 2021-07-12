@@ -9,19 +9,23 @@
 
 @implementation TwoCharacters
 
-
+- (NSString *)removeAdjacentDuplicates:(NSString *)s {
+  
+  NSUInteger start = 0;
+  NSUInteger length = 1;
+  while (length < s.length)
+  {
+    if ([s ch])
+  }
+  
+}
 
 - (NSNumber *)alternate:(NSString *)s {
   
-  NSMutableDictionary<NSString *, NSNumber *> *letters = [NSMutableDictionary new];
-  for (NSUInteger i=0; i<s.length; i++) {
-    NSString *key = [NSString stringWithFormat:@"%c", [s characterAtIndex:i]];
-    NSNumber *val = [letters objectForKey:key] ? [letters objectForKey:key] : @(0);
-    [letters setValue:@(val.integerValue + 1) forKey:key];
-  }
+  s = [self removeAdjacentDuplicates:s];
+  NSLog(@"removed duplicates: %@", s);
   
-  NSLog(@"letters: %@", [letters description]);
-  
+  return @([s length]);
 }
 
 @end
