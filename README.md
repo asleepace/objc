@@ -9,8 +9,11 @@ A portfolio of various Objective-C code snippets, problems and references.
 NSInteger maxValue = NSIntegerMax;
 NSInteger negValue = -NSIntegerMax;
 
-// conver nsnumber
+// convert NSNumber to NSInteger
 NSInteger integer = [@(10) integerValue];
+
+// regex for special characters via negations
+NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[^A-Za-z0-9]" options:0 error:0];
 ```
 
 ## KVC Collection Operators
@@ -51,6 +54,7 @@ typedef enum ShapeType : NSUInteger {
 
 - [http://fuckingblocksyntax.com/](http://fuckingblocksyntax.com/)
 - [https://nshipster.com/kvc-collection-operators/](https://nshipster.com/kvc-collection-operators/)
+- [Objective-C REGEX](https://stackoverflow.com/questions/37499037/regular-expressions-in-iosa-word-a-letter-and-special-characters)
 
 ## Reverse Array (Simple)
 
