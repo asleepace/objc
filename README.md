@@ -4,7 +4,7 @@ A portfolio of various Objective-C code snippets, problems and references.
 
 ## Quick References
 
-```Objectice-C
+```Objective-C
 // max values
 NSInteger maxValue = NSIntegerMax;
 NSInteger negValue = -NSIntegerMax;
