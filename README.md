@@ -14,6 +14,22 @@ NSInteger integer = [@(10) integerValue];
 
 // regex for special characters via negations
 NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[^A-Za-z0-9]" options:0 error:0];
+
+// check the password string for special characters via negation
+NSRegularExpression *regexString = [NSRegularExpression regularExpressionWithPattern:@"[^A-Za-z0-9]" options:0 error:nil];
+if ([regexString numberOfMatchesInString:password options:0 range:range] == 0) needed += 1;
+  
+// check the password string for uppercase characters
+NSRegularExpression *regexUpper = [NSRegularExpression regularExpressionWithPattern:@"[A-Z]" options:0 error:nil];
+if ([regexUpper numberOfMatchesInString:password options:0 range:range] == 0) needed += 1;
+  
+// check the password string for lowercase characters
+NSRegularExpression *regexLower = [NSRegularExpression regularExpressionWithPattern:@"[a-z]" options:0 error:nil];
+if ([regexLower numberOfMatchesInString:password options:0 range:range] == 0) needed += 1;
+  
+// check the password string for numerical character
+NSRegularExpression *regexValue = [NSRegularExpression regularExpressionWithPattern:@"[0-9]" options:0 error:nil];
+if ([regexValue numberOfMatchesInString:password options:0 range:range] == 0) needed += 1;
 ```
 
 ## KVC Collection Operators
