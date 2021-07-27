@@ -32,6 +32,19 @@ NSRegularExpression *regexValue = [NSRegularExpression regularExpressionWithPatt
 if ([regexValue numberOfMatchesInString:password options:0 range:range] == 0) needed += 1;
 ```
 
+## NSCountedSets
+
+```Objective-C
+NSCountedSet *count = [NSCountedSet setWithArray: ar];
+
+for (id obj in count) {
+    int num = [counts countForObject: obj];
+}
+
+- (NSUInteger)countForObject:(ObjectType)object;
+```
+
+
 ## KVC Collection Operators
 
 ```Objective-C
