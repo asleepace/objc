@@ -40,3 +40,19 @@ typedef enum ShapeType : NSUInteger {
 
 - [http://fuckingblocksyntax.com/](http://fuckingblocksyntax.com/)
 - [https://nshipster.com/kvc-collection-operators/](https://nshipster.com/kvc-collection-operators/)
+
+## Reverse Array (Simple)
+
+```Objective-C
+- (NSArray *) reverseArray:(NSArray *)a {
+    NSMutableArray *c = [NSMutableArray arrayWithArray: a];
+    int j = (int)([c count] - 1);
+    int halfWay = (int)(j / 2);
+    for (int i=0; i<=halfWay; i++) {
+        id temp = c[i];
+        c[i] = c[j-i];
+        c[j-i] = temp;
+    }
+    return c.copy;
+}
+```
