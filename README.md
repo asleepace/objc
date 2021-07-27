@@ -2,6 +2,17 @@
 
 A portfolio of various Objective-C code snippets, problems and references.
 
+## Quick References
+
+```Objectice-C
+// max values
+NSInteger maxValue = NSIntegerMax;
+NSInteger negValue = -NSIntegerMax;
+
+// conver nsnumber
+NSInteger integer = [@(10) integerValue];
+```
+
 ## KVC Collection Operators
 
 ```Objective-C
@@ -54,5 +65,32 @@ typedef enum ShapeType : NSUInteger {
         c[j-i] = temp;
     }
     return c.copy;
+}
+```
+
+## HourGlass Summation
+
+```Objective-C
+ - (NSInteger) sum:(NSArray **)arr row:(int)r col:(int)c {
+     NSInteger sum = [(*arr)[r][c] integerValue];
+     sum += [(*arr)[r][c+1] integerValue];
+     sum += [(*arr)[r][c+2] integerValue];
+     sum += [(*arr)[r+1][c+1] integerValue];
+     sum += [(*arr)[r+2][c] integerValue];
+     sum += [(*arr)[r+2][c+1] integerValue];
+     sum += [(*arr)[r+2][c+2] integerValue];
+     return sum;
+ }
+ 
+- (NSNumber *) hourglassSum:(NSArray *)arr {
+    int height = 2, width = 2;
+    NSInteger max = -NSIntegerMax;
+    for (int i=0; i<4; i++) {
+        for (int j=0; j<4; j++) {
+            NSInteger sum = [self sum:&arr row:i col:j];
+            max = sum > max ? sum : max;
+        }
+    }
+    return @(max);
 }
 ```
