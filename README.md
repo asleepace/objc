@@ -2,6 +2,16 @@
 
 A portfolio of various Objective-C code snippets, problems and references.
 
+## Helper Methods
+
+```Objective-C
+void info(id obj) {
+  NSLog(@"[inspector] obj: %@ type: %@", obj, [obj class]);
+}
+
+void 
+```
+
 ## Quick References
 
 ```Objective-C
